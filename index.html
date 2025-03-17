@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            color: #ff4081;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .background-emojis {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            opacity: 0.3;
+            pointer-events: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            z-index: -1;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+        }
+        .hearts {
+            font-size: 30px;
+        }
+        button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #e6005c;
+        }
+        #quote {
+            display: none;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #ff4081;
+        }
+    </style>
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise-img').style.display = 'block';
+            document.getElementById('audio').play();
+            document.getElementById('quote').style.display = 'block';
+        
+        }
+    </script>
+</head>
+<body>
+    <div class="background-emojis">💕✨🌸💖🌷💫💛🌟💗🌼💞🌻✨💕💕✨🌸💖🌷💫💛🌟💗🌼💞🌻✨💕💕✨🌸💖🌷💫💛🌟💗🌼💞🌻✨💕</div>
+    <div class="container">
+        <div class="hearts">💕💕💕</div>
+        <h1>Happy 3rd Anniversary, Krish! 💖</h1>
+        <p> Love, laughter, and unforgettable memories. I'm so unbelievably lucky to have you. ❤️</p>
+        <button onclick="showSurprise()">Click me for a surprise!</button>
+        <img id="surprise-img" src="us.JPG" alt="Us together">
+        <p id="quote">"3 magical years with you... an eternity of magic to go"</p>
+        <audio id="audio" src="krish.mp3"></audio>
+        <div class="hearts">💕💕💕</div>
+            <p id="hint" style="display: none; font-size: 16px; color: #ff4081; margin-top: 10px;">Hint: sound on! 🔊</p>
+    </div>
+</body>
+</html>
